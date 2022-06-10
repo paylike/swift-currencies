@@ -3,7 +3,7 @@ import Foundation
 /**
     Describes a single currency supported by the Paylike ecosystem
  */
-struct PaylikeCurrency {
+public struct PaylikeCurrency {
     let code: String;
     let currency: String;
     let numeric: Int;
