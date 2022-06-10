@@ -1,10 +1,12 @@
 {
   "name": "tools",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "tools/builder.js",
   "type": "module",
   "dependencies": {
     "node-fetch": "^3.2.6"
+  },
+  "scripts": {
+    "start": "node ./tools/builder.js"
   }
 }
