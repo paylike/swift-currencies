@@ -1,6 +1,6 @@
 import fs from "fs";
 import fetch from "node-fetch";
-const generationPath = "PaylikeCurrencies/Sources/PaylikeCurrencies/";
+const generationPath = "Sources/PaylikeCurrencies/";
 const input =
   "https://raw.githubusercontent.com/paylike/currencies/master/currencies.json";
 const outputCodes = "CurrencyCode.swift";
