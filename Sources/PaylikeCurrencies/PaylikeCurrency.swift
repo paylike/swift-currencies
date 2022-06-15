@@ -3,7 +3,7 @@ import Foundation
 /**
     Describes a single currency supported by the Paylike ecosystem
  */
-public struct PaylikeCurrency {
+public struct PaylikeCurrency : Codable {
     /**
         Code of the currency (e.g. EUR)
      */

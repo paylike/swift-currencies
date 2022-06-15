@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PaylikeCurrencies'
   s.swift_version    = '4.0'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Utility package to work with currencies in the Paylike ecosystem'
   s.description      = <<-DESC
 This packages is a clone of the JS version and responsible for providing a handy
