@@ -43,7 +43,7 @@ account, settlement and funding currency.
 __SPM__:
 ```swift
 // dependencies: 
-.package(url: "git@github.com:paylike/swift-currencies.git", .upToNextMajor(from: "0.2.0")
+.package(url: "git@github.com:paylike/swift-currencies.git", .upToNextMajor(from: "0.4.0")
 
 // target:
 .product(name: "PaylikeCurrencies", package: "swift-currencies")
@@ -60,25 +60,24 @@ pod 'PaylikeCurrencies'
 Within the Paylike ecosystem you should use the `CurrencyCode` enum to refer to a currency.
 
 ```swift
-let currencies = PaylikeCurrencies();
-let eur = currencies.byCode(code: CurrencyCode.EUR);
+let eur = PaylikeCurrencies.byCode(code: CurrencyCode.EUR);
 
 // lookup by code
-currencies.byCode(code: CurrencyCode.AED);
+PaylikeCurrencies.byCode(code: CurrencyCode.AED);
 // { code: 'AED', currency: 'United Arab Emirates dirham', numeric: '784' }
 
 // lookup CurrencyCode
-currencies.getCurrencyCode("EUR");
+PaylikeCurrencies.getCurrencyCode("EUR");
 // CurrencyCode.EUR
 
 // get List<PaylikeCurrency>
-currencies.list();
+PaylikeCurrencies.list();
 
 // Convert between minor and major respecting the exponent
-currencies.toMinor(CurrencyCode.DKK, 100.00);
+PaylikeCurrencies.toMinor(CurrencyCode.DKK, 100.00);
 // 10000
 
-currencies.toMajor(CurrencyCode.DKK, 10000);
+PaylikeCurrencies.toMajor(CurrencyCode.DKK, 10000);
 // 100.00
 ```
 
