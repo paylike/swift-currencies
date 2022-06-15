@@ -38,6 +38,23 @@ account, settlement and funding currency.
 - BGN (Bulgarian lev)
 - HRK (Croatian kuna)
 
+## Install
+
+__SPM__:
+```swift
+// dependencies: 
+.package(url: "git@github.com:paylike/swift-currencies.git", .upToNextMajor(from: "0.2.0")
+
+// target:
+.product(name: "PaylikeCurrencies", package: "swift-currencies")
+```
+
+__Cocoapods__:
+https://cocoapods.org/pods/PaylikeCurrencies
+```ruby
+pod 'PaylikeCurrencies'
+```
+
 ## Usage
 
 Within the Paylike ecosystem you should use the `CurrencyCode` enum to refer to a currency.
